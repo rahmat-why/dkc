@@ -1,0 +1,2 @@
+[29-Sep-2020 09:47:54 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'free4ware_dkc'@'localhost' (using password: YES) in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 5
+[29-Sep-2020 09:47:54 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'free4ware_dkr'@'localhost' (using password: YES) in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 6

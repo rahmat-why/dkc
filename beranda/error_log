@@ -1,0 +1,32 @@
+[29-Sep-2020 09:44:38 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'free4ware_dkc'@'localhost' (using password: YES) in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 5
+[29-Sep-2020 09:44:38 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'free4ware_dkr'@'localhost' (using password: YES) in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 6
+[29-Sep-2020 09:44:38 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 12
+[29-Sep-2020 09:44:38 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/freeware/public_html/wmt/beranda/index.php on line 29
+[29-Sep-2020 09:44:38 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 91
+[29-Sep-2020 09:44:38 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/freeware/public_html/wmt/beranda/index.php on line 55
+[29-Sep-2020 09:44:38 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 191
+[29-Sep-2020 09:44:38 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/freeware/public_html/wmt/beranda/index.php on line 84
+[29-Sep-2020 09:46:49 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'free4ware_dkc'@'localhost' (using password: YES) in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 5
+[29-Sep-2020 09:46:49 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'free4ware_dkr'@'localhost' (using password: YES) in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 6
+[29-Sep-2020 09:46:49 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 12
+[29-Sep-2020 09:46:49 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/freeware/public_html/wmt/beranda/index.php on line 29
+[29-Sep-2020 09:46:49 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 91
+[29-Sep-2020 09:46:49 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/freeware/public_html/wmt/beranda/index.php on line 55
+[29-Sep-2020 09:46:49 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 191
+[29-Sep-2020 09:46:49 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/freeware/public_html/wmt/beranda/index.php on line 84
+[29-Sep-2020 09:46:55 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'free4ware_dkc'@'localhost' (using password: YES) in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 5
+[29-Sep-2020 09:46:55 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'free4ware_dkr'@'localhost' (using password: YES) in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 6
+[29-Sep-2020 09:46:55 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 12
+[29-Sep-2020 09:46:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/freeware/public_html/wmt/beranda/index.php on line 29
+[29-Sep-2020 09:46:55 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 91
+[29-Sep-2020 09:46:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/freeware/public_html/wmt/beranda/index.php on line 55
+[29-Sep-2020 09:46:55 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 191
+[29-Sep-2020 09:46:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/freeware/public_html/wmt/beranda/index.php on line 84
+[29-Sep-2020 09:47:05 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'free4ware_dkc'@'localhost' (using password: YES) in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 5
+[29-Sep-2020 09:47:05 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'free4ware_dkr'@'localhost' (using password: YES) in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 6
+[29-Sep-2020 09:47:05 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 12
+[29-Sep-2020 09:47:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/freeware/public_html/wmt/beranda/index.php on line 29
+[29-Sep-2020 09:47:05 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 91
+[29-Sep-2020 09:47:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/freeware/public_html/wmt/beranda/index.php on line 55
+[29-Sep-2020 09:47:05 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 191
+[29-Sep-2020 09:47:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/freeware/public_html/wmt/beranda/index.php on line 84

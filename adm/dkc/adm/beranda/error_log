@@ -1,0 +1,9 @@
+[01-Oct-2020 03:58:15 UTC] PHP Warning:  unlink(../assets/file/agenda/): Is a directory in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 247
+[01-Oct-2020 04:04:17 UTC] PHP Warning:  unlink(../assets/file/agenda/): Is a directory in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 247
+[12-Oct-2020 00:14:32 UTC] PHP Warning:  unlink(../assets/file/agenda/): Is a directory in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 247
+[12-Oct-2020 00:14:38 UTC] PHP Warning:  unlink(../assets/file/agenda/): Is a directory in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 247
+[28-Oct-2020 17:48:13 UTC] PHP Warning:  unlink(../assets/file/berita/146-teacher_stress.jpg): No such file or directory in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 131
+[28-Oct-2020 17:50:08 UTC] PHP Warning:  unlink(../assets/file/agenda/): Is a directory in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 247
+[28-Oct-2020 17:50:12 UTC] PHP Warning:  unlink(../assets/file/agenda/): Is a directory in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 247
+[28-Oct-2020 17:50:20 UTC] PHP Warning:  unlink(../assets/file/agenda/): Is a directory in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 247
+[28-Oct-2020 17:50:23 UTC] PHP Warning:  unlink(../assets/file/agenda/): Is a directory in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 247

@@ -1,0 +1,2 @@
+[25-Oct-2020 19:35:08 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/freeware/public_html/wmt/adm/dkrr/adm/auth.php on line 6
+[25-Oct-2020 19:35:08 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/freeware/public_html/wmt/adm/dkrr/adm/auth.php on line 7

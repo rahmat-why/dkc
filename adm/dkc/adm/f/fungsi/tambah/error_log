@@ -1,0 +1,4 @@
+[01-Oct-2020 11:19:19 Asia/Jakarta] PHP Warning:  move_uploaded_file(../assets/file/layer/822-free4ware1.png): failed to open stream: No such file or directory in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 112
+[01-Oct-2020 11:19:19 Asia/Jakarta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpqmhb8h' to '../assets/file/layer/822-free4ware1.png' in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 112
+[01-Oct-2020 11:30:57 Asia/Jakarta] PHP Warning:  move_uploaded_file(../assets/file/layer/386-free4ware.png): failed to open stream: No such file or directory in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 112
+[01-Oct-2020 11:30:57 Asia/Jakarta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpdvUphZ' to '../assets/file/layer/386-free4ware.png' in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 112

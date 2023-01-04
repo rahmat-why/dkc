@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  background: #EEE;
+  color: #7a7a7a;
+  font: .9rem/1.62 sans-serif;
+  text-align: center;
+}
+
+main {
+  width: 75%;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+}
+
+button {
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 1em;
+  padding: .5em 1em;
+  color: white;
+  text-decoration: none;
+  font-size: 1re;
+  border-radius: 3px;
+  transition: .3s;
+  background: #a60b0f;
+  border: none;
+}
+button:hover {
+  background-color: #c40004;
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+table > tbody > tr:nth-of-type(odd) {
+  background-color: none;
+}
+table tbody > tr:hover {
+  background-color: #f5f5f5;
+}
+table tr:last-child:not(:first-child) th {
+  background: #f5f5f5;
+}
+table tr > td {
+  padding: 0.5rem 0.5rem;
+  border-top: 1px solid #f4f4f4;
+}
+table thead > tr > th {
+  color: #616161;
+  padding: 0.5rem;
+  text-transform: capitalize;
+}
+table thead tr:first-child th {
+  padding-bottom: 1.2rem;
+  padding-top: 1.2rem;
+  color: #797979;
+}
+table td,
+table th {
+  text-align: left;
+}
+
+@media print {
+  @page {
+    margin: 1.5cm;
+  }
+  input {
+    display: none;
+  }
+
+  a:after {
+    content: " (" attr(href) ")";
+    font-size: 80%;
+  }
+
+  a {
+    color: #000;
+  }
+
+  p a {
+    word-wrap: break-word;
+  }
+
+  body {
+    background: none;
+    color: #444;
+  }
+}

@@ -1,0 +1,146 @@
+html {
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+	background-color: #ffffff;
+}
+
+.logo{
+	width: 60px; 
+	margin-left: 10px;
+	margin-bottom: 10px;
+	background-color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-radius: 10px;
+}
+
+.navnav{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+/* --------------- Common CSS Start --------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1194px;
+}
+.row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.h85 {
+  height: 87px;
+}
+.p11 {
+  padding-top: 11px;
+}
+.text-center {
+  text-align: center;
+}
+.spacing {
+  padding: 75px 0;
+}
+iframe{
+  border:0; 
+  width: 100%;
+  margin-bottom: -7px;
+}
+
+/* --------------- Content Section Start --------------- */
+
+.content-wrap .title {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #4c505d;
+  font-size: 30px;
+  line-height: 49px;
+}
+.content-wrap .sub-title {
+  max-width: 880px;
+  line-height: 21px;
+  margin: 0 auto;
+  margin-top: 26px;
+}
+.icon-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 46%;
+  margin: 0 auto;
+  margin-top: 67px;
+}
+.icon-wrap .icon img {
+  width: 55px;
+}
+/* --------------- Content Section Start --------------- */
+
+/* --------------- Footer Start --------------- */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* --------------- Responsive CSS Starts --------------- */
+
+/* --------------- For Tablet --------------- */
+
+@media (max-width: 1024px) {
+  .container {
+    width: 99%;
+  }
+  .icon-wrap {
+    width: 55%;
+  }
+}
+/* --------------- For Tablet --------------- */
+
+/* --------------- For Small Tablet --------------- */
+
+@media (max-width: 768px) {
+  .content-wrap .sub-title {
+    max-width: 679px;
+    line-height: 22px;
+    margin-top: 25px;
+  }
+  .icon-wrap {
+    width: 73%;
+    margin-top: 44px;
+  }
+  /* --------------- Responsive navigation Ends --------------- */
+}
+/* --------------- For Small Tablet --------------- */
+
+/* --------------- For Smartphone --------------- */
+
+/* --------------- For Smartphone --------------- */
+
+/* --------------- Responsive CSS Ends --------------- */
+
+#tabs { margin: 2em; }
+#content { margin: 2em; }
+
+#content2,
+#content3 { display: none; }

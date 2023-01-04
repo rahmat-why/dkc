@@ -1,0 +1,4 @@
+[29-Sep-2020 09:48:09 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'free4ware_dkc'@'localhost' (using password: YES) in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 5
+[29-Sep-2020 09:48:09 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'free4ware_dkr'@'localhost' (using password: YES) in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 6
+[29-Sep-2020 09:48:09 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/freeware/public_html/wmt/adm/dkc/adm/f/fungsi/fungsi.php on line 577
+[29-Sep-2020 09:48:09 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/freeware/public_html/wmt/aturan/adart.php on line 33
