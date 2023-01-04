@@ -30,7 +30,7 @@ if($gambar != "") {
   $nama_file_baru = $angka_acak.'-'.$gambar;
     if(in_array($ekstensi, $ekstensi_diperbolehkan) === true)  {
                   move_uploaded_file($file_tmp, "../assets/file/layer/".$nama_file_baru); 
-                   $query  = "INSERT INTO layer VALUES('', '$nama_file_baru', '$judul', '$tstamp')";
+                   $query  = "INSERT INTO layer(`gambar`, `judul`, `tstamp`) VALUES('$nama_file_baru', '$judul', '$tstamp')";
                    $result = mysqli_query($conn, $query);
               } else {               
                   echo "<script>alert('Silahkan Upload Gambar');
@@ -228,7 +228,7 @@ if($gambar != "") {
   $nama_file_baru = $angka_acak.'-'.$gambar;
     if(in_array($ekstensi, $ekstensi_diperbolehkan) === true)  {
                   move_uploaded_file($file_tmp, '../assets/file/layer/'.$nama_file_baru); 
-                  $query  = "INSERT INTO berita VALUES('', '$nama_file_baru', '$judul', '$isi', '$tstamp')";
+                  $query  = "INSERT INTO berita(`gambar`, `judul`, `isi`, `tstamp`) VALUES('$nama_file_baru', '$judul', '$isi', '$tstamp')";
                   $result = mysqli_query($conn, $query);
 
               } else {     
@@ -355,7 +355,7 @@ function insert__agenda() {
   date_default_timezone_set('Asia/Jakarta');
   $tstamp = date('d-m-Y H:i:s');
 
-  return mysqli_query($conn, "INSERT INTO agenda VALUES('', '".$tgl[0]."', '".$tgl[1]."', '".$judul."', '".$tstamp."')");
+  return mysqli_query($conn, "INSERT INTO agenda(`tanggal`, `bulan`, `judul`, `tstamp`) VALUES('".$tgl[0]."', '".$tgl[1]."', '".$judul."', '".$tstamp."')");
 
 }
 
@@ -398,7 +398,7 @@ function insert__visimisi() {
   date_default_timezone_set('Asia/Jakarta');
   $tstamp = date('d-m-Y H:i:s');
 
-  return mysqli_query($conn, "INSERT INTO visimisi VALUES(NULL, '$isi', '$kategori', '$tstamp')");
+  return mysqli_query($conn, "INSERT INTO visimisi(`gambar`, `isi`, `kategori`, `tstamp`) VALUES(NULL, '$isi', '$kategori', '$tstamp')");
 }
 
 function sunting__visimisi() {
@@ -530,7 +530,7 @@ if($gambar != "") {
   $nama_file_baru = $angka_acak.'-'.$gambar;
     if(in_array($ekstensi, $ekstensi_diperbolehkan) === true)  {
                   move_uploaded_file($file_tmp, '../assets/file/prestasi/'.$nama_file_baru); 
-                    $query  = "INSERT INTO prestasi VALUES('', '$nama_file_baru', '$judul', '$isi', '$tstamp')";
+                    $query  = "INSERT INTO prestasi(`gambar`, `judul`, `isi`, `tstamp`) VALUES('$nama_file_baru', '$judul', '$isi', '$tstamp')";
                     $result = mysqli_query($conn, $query);
               } else {     
                   echo "<script>alert('Silahkan Upload Gambar');
@@ -611,7 +611,7 @@ if($gambar != "") {
   $nama_file_baru = $angka_acak.'-'.$gambar;
     if(in_array($ekstensi, $ekstensi_diperbolehkan) === true)  {
                   move_uploaded_file($file_tmp, '../assets/file/fasilitas/'.$nama_file_baru); 
-                    $query  = "INSERT INTO fasilitas VALUES('', '$nama_file_baru', '$nama', '$tstamp')";
+                    $query  = "INSERT INTO fasilitas(`gambar`, `nama`, `tstamp`) VALUES('$nama_file_baru', '$nama', '$tstamp')";
                     $result = mysqli_query($conn, $query);
               } else {     
                   echo "<script>alert('Silahkan Upload Gambar');
@@ -671,6 +671,35 @@ function select__aturan() {
   return mysqli_query($conn, "SELECT * FROM aturan ORDER BY id DESC");
 }
 
+function insert__aturan() {
+  global $conn; 
+
+  $file      = $_FILES['file']['name'];
+  $kategori  = $_POST['kategori'];
+  
+  date_default_timezone_set('Asia/Jakarta');
+  $tstamp = date('d-m-Y H:i:s');
+
+  if($file != "") {
+    $ekstensi_diperbolehkan = array('pdf', 'docx');
+    $x = explode('.', $file);
+    $ekstensi = strtolower(end($x));
+    $file_tmp = $_FILES['file']['tmp_name'];   
+    $angka_acak     = rand(1,999);
+    $nama_file_baru = $angka_acak.'-'.$file;
+      if(in_array($ekstensi, $ekstensi_diperbolehkan) === true)  {
+
+        move_uploaded_file($file_tmp, '../assets/file/aturan/'.$nama_file_baru); 
+        $query  = "INSERT INTO aturan(`file`, `kategori`, `ekstensi`, `tstamp`) VALUES('$nama_file_baru', '$kategori', '$ekstensi', '$tstamp')";
+
+        $result = mysqli_query($conn, $query);
+      }else{     
+        echo "<script>alert('Ekstensi gambar yang boleh hanya pdf atau docx.');
+              window.location='".url(s)."adm/dkc/adm/aturan/';</script>";
+      }
+    }
+}
+
 function sunting__aturan() {
   global $conn; 
 
@@ -699,6 +728,14 @@ if($file != "") {
                         window.location='".url(s)."adm/dkc/adm/aturan/';</script>";
               }
     }
+}
+
+function hapus__aturan() {
+  global $conn;
+  $id          = htmlspecialchars($_POST['id']);
+  $file_lama = htmlspecialchars($_POST['file_lama']);
+  unlink("../assets/file/aturan/$file_lama");
+  return mysqli_query($conn, "DELETE FROM aturan WHERE id = '$id'");
 }
 
 // aturan pilihan --------------------------------------------------------------------------------------------------------------
@@ -970,18 +1007,17 @@ if($gambar != "") {
   $angka_acak     = rand(1,999);
   $nama_file_baru = $angka_acak.'-'.$gambar;
     if(in_array($ekstensi, $ekstensi_diperbolehkan) === true)  {
-                  move_uploaded_file($file_tmp, '../../assets/file/profil/'.$nama_file_baru); 
-                  $query  = "INSERT INTO profil VALUES('', '$nama_file_baru', '$tingkatsku', '$gugusdepan', '$kwartirranting', '$namalengkap', '$nta', '$kategori', '$kat', '$tstamp')";
-                  $result = mysqli_query($conn, $query);
+      move_uploaded_file($file_tmp, '../../assets/file/profil/'.$nama_file_baru); 
+      $query  = "INSERT INTO profil(`gambar`, `tingkatsku`, `gugusdepan`, `kwartirranting`, `namalengkap`, `nta`, `kategori`, `kat`, `tstamp`) VALUES('$nama_file_baru', '$tingkatsku', '$gugusdepan', '$kwartirranting', '$namalengkap', '$nta', '$kategori', '$kat', '$tstamp')";
+      $result = mysqli_query($conn, $query);
 
-              } else {     
-               
-                  echo "<script>alert('Silahkan Upload Gambar');
-                        window.location='".url(s)."adm/dkc/adm/beranda/berita.php';</script>";
-              }
-    } else {
-      echo "<script>alert('error');window.location='".url(s)."adm/dkc/adm/log/logout.php';</script>";
+    } else {      
+        echo "<script>alert('Silahkan Upload Gambar');
+              window.location='".url(s)."adm/dkc/adm/beranda/berita.php';</script>";
     }
+  } else {
+    echo "<script>alert('error');window.location='".url(s)."adm/dkc/adm/log/logout.php';</script>";
+  }
 
 }
 
@@ -1093,27 +1129,25 @@ function insert__bk() {
   date_default_timezone_set('Asia/Jakarta');
   $tstamp = date('d-m-Y H:i:s');
 
-if($gambar != "") {
-  $ekstensi_diperbolehkan = array('jpg','png','jpeg');
-  $x = explode('.', $gambar);
-  $ekstensi = strtolower(end($x));
-  $file_tmp = $_FILES['gambar']['tmp_name'];   
-  $angka_acak     = rand(1,999);
-  $nama_file_baru = $angka_acak.'-'.$gambar;
+  if($gambar != "") {
+    $ekstensi_diperbolehkan = array('jpg','png','jpeg');
+    $x = explode('.', $gambar);
+    $ekstensi = strtolower(end($x));
+    $file_tmp = $_FILES['gambar']['tmp_name'];   
+    $angka_acak     = rand(1,999);
+    $nama_file_baru = $angka_acak.'-'.$gambar;
+
     if(in_array($ekstensi, $ekstensi_diperbolehkan) === true)  {
-                  move_uploaded_file($file_tmp, '../../assets/file/profil/'.$nama_file_baru); 
-                  $query  = "INSERT INTO profil VALUES('', '$nama_file_baru', '$tingkatsku', '$gugusdepan', '$kwartirranting', '$namalengkap', '$nta', '$kategori', '$kat', '$tstamp')";
-                  $result = mysqli_query($conn, $query);
-
-
-              } else {     
-               
-                  echo "<script>alert('Silahkan Upload Gambar');
-                        window.location='".url(s)."adm/dkc/adm/beranda/berita.php';</script>";
-              }
-    } else {
-      echo "<script>alert('error');window.location='".url()."adm/dkc/adm/log/logout.php';</script>";
+      move_uploaded_file($file_tmp, '../../assets/file/profil/'.$nama_file_baru); 
+      $query  = "INSERT INTO profil(`gambar`, `tingkatsku`, `gugusdepan`, `kwartirranting`, `namalengkap`, `nta`, `kategori`, `kat`, `tstamp`) VALUES('$nama_file_baru', '$tingkatsku', '$gugusdepan', '$kwartirranting', '$namalengkap', '$nta', '$kategori', '$kat', '$tstamp')";
+      $result = mysqli_query($conn, $query);
+    } else {      
+        echo "<script>alert('Silahkan Upload Gambar');
+              window.location='".url(s)."adm/dkc/adm/beranda/berita.php';</script>";
     }
+  } else {
+    echo "<script>alert('error');window.location='".url()."adm/dkc/adm/log/logout.php';</script>";
+  }
 
 }
 
@@ -1236,7 +1270,7 @@ if($gambar != "") {
   $nama_file_baru = $angka_acak.'-'.$gambar;
     if(in_array($ekstensi, $ekstensi_diperbolehkan) === true)  {
                   move_uploaded_file($file_tmp, '../../assets/file/profil/'.$nama_file_baru); 
-                  $query  = "INSERT INTO profil VALUES('', '$nama_file_baru', '$tingkatsku', '$gugusdepan', '$kwartirranting', '$namalengkap', '$nta', '$kategori', '$kat', '$tstamp')";
+                  $query  = "INSERT INTO profil(`gambar`, `tingkatsku`, `gugusdepan`, `kwartirranting`, `namalengkap`, `nta`, `kategori`, `kat`, `tstamp`) VALUES('$nama_file_baru', '$tingkatsku', '$gugusdepan', '$kwartirranting', '$namalengkap', '$nta', '$kategori', '$kat', '$tstamp')";
                   $result = mysqli_query($conn, $query);
 
 
@@ -1368,7 +1402,7 @@ if($gambar != "") {
   $nama_file_baru = $angka_acak.'-'.$gambar;
     if(in_array($ekstensi, $ekstensi_diperbolehkan) === true)  {
                   move_uploaded_file($file_tmp, '../../assets/file/profil/'.$nama_file_baru); 
-                  $query  = "INSERT INTO profil VALUES('', '$nama_file_baru', '$tingkatsku', '$gugusdepan', '$kwartirranting', '$namalengkap', '$nta', '$kategori', '$kat', '$tstamp')";
+                  $query  = "INSERT INTO profil(`gambar`, `tingkatsku`, `gugusdepan`, `kwartirranting`, `namalengkap`, `nta`, `kategori`, `kat`, `tstamp`) VALUES('$nama_file_baru', '$tingkatsku', '$gugusdepan', '$kwartirranting', '$namalengkap', '$nta', '$kategori', '$kat', '$tstamp')";
                   $result = mysqli_query($conn, $query);
 
 
@@ -1457,7 +1491,7 @@ function insert__programkerja() {
   date_default_timezone_set('Asia/Jakarta');
   $tstamp = date('d-m-Y H:i:s');
 
-  return mysqli_query($conn, "INSERT INTO programkerja VALUES('', '".$kegiatan."', '".$tahun."', '".$tstamp."')");
+  return mysqli_query($conn, "INSERT INTO programkerja_dkc(`kegiatan`, `tahun`, `tstamp`) VALUES('".$kegiatan."', '".$tahun."', '".$tstamp."')");
 
 }
 
@@ -1568,7 +1602,7 @@ function insert__pesan() {
 
   $ip = $_SERVER['REMOTE_ADDR'];
 
-  $query = "INSERT INTO pesan VALUES('', '$nama_lengkap', '$email_notelp', '$isi', '$tstamp', '$ip')";
+  $query = "INSERT INTO pesan(`nama_lengkap`, `email_notelp`, `isi`, `tstamp`, `alamat_ip`) VALUES('$nama_lengkap', '$email_notelp', '$isi', '$tstamp', '$ip')";
   $res = mysqli_query($conn, $query);
 
   if ($res) {

@@ -7,12 +7,10 @@ require '../../f/fungsi/fungsi.php';
 
 <div class="top-bar">
   <i class="nav__toggle fa fa-bars" aria-hidden="true"></i>
-  <img class="logo__icon" src="<?= url(); ?>assets/img/pramukakabbogor.png" style="width: 90px; height: 50px; padding-top: 10px;">
 </div>
 <div class="mobile-mask"></div>
 <nav class="nav">
   <div class="m-logo">
-    <img class="logo__icon" src="<?= url(); ?>assets/img/pramukakabbogor.png" style="width: 90px; height: 50px; padding-top: 10px;">
   </div>
   <div class="nav__item overview">
     <i class="fa fa-home" aria-hidden="true"></i>

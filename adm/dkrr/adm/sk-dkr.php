@@ -43,7 +43,7 @@ $menu = 'SK DKR';
 <main class="main">
   
   <div class="title-bar container-fluid">
-    <h4 style="color: white">Kwaran <?= $_SESSION['username']; ?></h4>
+    <h4 style="color: white">Kwartir Ranting <?= $_SESSION['username']; ?></h4>
   </div>
   
   <br>

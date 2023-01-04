@@ -72,7 +72,7 @@ require '../adm/dkc/adm/f/fungsi/fungsi.php';
 
   <div class="container">
     <center>
-      <p style="font-family: 'Fredoka One'; font-size: 20px;"><?= $key['judul'] ?></p>
+      <p style="font-family: 'Montserrat', sans-serif; font-size: 20px;"><?= $key['judul'] ?></p>
       <p>
         <?= $key['deskripsi'] ?>
       </p>
@@ -89,7 +89,7 @@ require '../adm/dkc/adm/f/fungsi/fungsi.php';
       <div class="card" style="padding: 20px; box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.45);">
         <div class="row">
           <div class="card-body">
-            <h1><p class="card-title" style="font-size: 18px; text-align: center; font-family: 'Fredoka One';">SAMBUTAN KETUA DKC (2020 - 2025)</p></h1>
+            <h1><p class="card-title" style="font-size: 18px; text-align: center; font-family: 'Montserrat', sans-serif;">SAMBUTAN KETUA DKC (2020 - 2025)</p></h1>
             <br>
 
           </div>

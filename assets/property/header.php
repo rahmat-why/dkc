@@ -207,13 +207,7 @@ require '../../adm/dkc/adm/f/fungsi/fungsi.php';
               </ul>
             </li>
             <li><a href="<?= url(); ?>dkr/" style="color: black"><b><i class="fa fa-users"></i> DKR</b></a></li>
-            <li><a href="#" style="color: black"><b><i class="fa fa-bookmark"></i> ATURAN & JUKLAK</b></a>
-              <ul class="nav-dropdown">
-                <li><a href="<?= url(); ?>aturan/gerakanpramuka.php">UU GERAKAN PRAMUKA</a></li>
-                <li><a href="<?= url(); ?>aturan/adart.php">AD ART</a></li>
-                <li><a href="<?= url(); ?>aturan/juklak.php">JUKLAK</a></li>
-              </ul>
-            </li>
+            <li><a href="<?= url(); ?>aturan/" style="color: black"><b><i class="fa fa-bookmark"></i> PEDOMAN</b></a></li>
             <li><a href="<?= url(); ?>fasilitas/" style="color: black"><b><i class="fa fa-book"></i> FASILITAS</b></a></li>
             <li><a href="<?= url(); ?>hubungikami/" style="color: black;"><b><i class="fa fa-phone"></i> HUBUNGI KAMI</b></a></li>
             <li><a href="<?= url(); ?>user/" style="color: black;"><b><i class="fa fa-user"></i> LOGIN</b></a></li>

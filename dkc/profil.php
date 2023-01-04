@@ -127,34 +127,36 @@ $key = mysqli_fetch_assoc(select__profilketuabph());
 							<br>	
 						</div>
 						<div class="col-md-7">
-							<p style="font-size: 17px; color: #ffffff; font-family: Arial, Helvetica, sans-serif;"><?= $key['namalengkap'] ?></p>
-							<p style="font-size: 15px; color: #dad6f3; font-family: Times New Roman, Times, serif;"><?= $key['nta'] ?></p>	
-							<p style="font-size: 14px; color: #dad6f3; font-family: Arial, Helvetica, sans-serif;"><?= $key['tingkatsku'] ?> | <?= $key['gugusdepan'] ?> | <?= $key['kwartirranting'] ?></p>	
+							<b>
+								<p style="font-size: 19px; color: #ffffff; font-family: 'Montserrat', sans-serif;"><?= $key['namalengkap'] ?></p>
+								<p style="font-size: 17px; color: #dad6f3; font-family: 'Montserrat', sans-serif;"><?= $key['nta'] ?></p>	
+								<p style="font-size: 17px; color: #dad6f3; font-family: 'Montserrat', sans-serif;"><?= $key['tingkatsku'] ?> | <?= $key['gugusdepan'] ?> | <?= $key['kwartirranting'] ?></p>		
+							</b>
 
 							<br>
 							<br>
 							<br>
 
 							<a href="https://www.instagram.com/<?= $key['instagram'] ?>">
-								<p style="font-size: 13px; color: #ffffff; font-family: Arial, Helvetica, sans-serif;">
+								<p style="font-size: 13px; color: #ffffff; font-family: 'Montserrat', sans-serif;">
 									<img src="<?= url(); ?>assets/img/instagram.png" style="width: 18px;"> <?= $key['instagram'] ?>
 								</p>
 							</a>
 
 							<a href="https://www.facebook.com/<?= $key['twitter'] ?>">
-								<p style="font-size: 13px; color: #ffffff; font-family: Arial, Helvetica, sans-serif;">
+								<p style="font-size: 13px; color: #ffffff; font-family: 'Montserrat', sans-serif;">
 									<img src="<?= url(); ?>assets/img/facebook.png" style="width: 18px;"> <?= $key['twitter'] ?>
 								</p>
 							</a>
 
 							<a href="https://twitter.com/<?= $key['facebook'] ?>">
-								<p style="font-size: 13px; color: #ffffff; font-family: Arial, Helvetica, sans-serif; margin-left: -2px;">
+								<p style="font-size: 13px; color: #ffffff; font-family: 'Montserrat', sans-serif; margin-left: -2px;">
 									<img src="<?= url(); ?>assets/img/twitter.png" style="width: 20px;"> <?= $key['facebook'] ?>
 								</p>
 							</a>
 
 							<a href="https://www.instagram.com/<?= $key['youtube'] ?>">
-								<p style="font-size: 13px; color: #ffffff; font-family: Arial, Helvetica, sans-serif;">
+								<p style="font-size: 13px; color: #ffffff; font-family: 'Montserrat', sans-serif;">
 									<img src="<?= url(); ?>assets/img/youtube.png" style="width: 18px;"> <?= $key['youtube'] ?>
 								</p>
 							</a>
@@ -188,34 +190,36 @@ $key = mysqli_fetch_assoc(select__profilketuabph());
 							<br>	
 						</div>
 						<div class="col-md-7">
-							<p style="font-size: 17px; color: #ffffff; font-family: Arial, Helvetica, sans-serif;"><?= $key['namalengkap'] ?></p>
-							<p style="font-size: 15px; color: #dad6f3; font-family: Times New Roman, Times, serif;"><?= $key['nta'] ?></p>	
-							<p style="font-size: 14px; color: #dad6f3; font-family: Arial, Helvetica, sans-serif;"><?= $key['tingkatsku'] ?> | <?= $key['gugusdepan'] ?> | <?= $key['kwartirranting'] ?></p>	
+							<b>
+								<p style="font-size: 19px; color: #ffffff; font-family: 'Montserrat', sans-serif;"><?= $key['namalengkap'] ?></p>
+								<p style="font-size: 17px; color: #dad6f3; font-family: 'Montserrat', sans-serif;"><?= $key['nta'] ?></p>	
+								<p style="font-size: 17px; color: #dad6f3; font-family: 'Montserrat', sans-serif;"><?= $key['tingkatsku'] ?> | <?= $key['gugusdepan'] ?> | <?= $key['kwartirranting'] ?></p>		
+							</b>
 
 							<br>
 							<br>
 							<br>
 
 							<a href="https://www.instagram.com/<?= $key['instagram'] ?>">
-								<p style="font-size: 13px; color: #ffffff; font-family: Arial, Helvetica, sans-serif;">
+								<p style="font-size: 13px; color: #ffffff; font-family: 'Montserrat', sans-serif;">
 									<img src="<?= url(); ?>assets/img/instagram.png" style="width: 18px;"> <?= $key['instagram'] ?>
 								</p>
 							</a>
 
 							<a href="https://www.facebook.com/<?= $key['twitter'] ?>">
-								<p style="font-size: 13px; color: #ffffff; font-family: Arial, Helvetica, sans-serif;">
+								<p style="font-size: 13px; color: #ffffff; font-family: 'Montserrat', sans-serif;">
 									<img src="<?= url(); ?>assets/img/facebook.png" style="width: 18px;"> <?= $key['twitter'] ?>
 								</p>
 							</a>
 
 							<a href="https://twitter.com/<?= $key['facebook'] ?>">
-								<p style="font-size: 13px; color: #ffffff; font-family: Arial, Helvetica, sans-serif; margin-left: -2px;">
+								<p style="font-size: 13px; color: #ffffff; font-family: 'Montserrat', sans-serif; margin-left: -2px;">
 									<img src="<?= url(); ?>assets/img/twitter.png" style="width: 20px;"> <?= $key['facebook'] ?>
 								</p>
 							</a>
 
 							<a href="https://www.instagram.com/<?= $key['youtube'] ?>">
-								<p style="font-size: 13px; color: #ffffff; font-family: Arial, Helvetica, sans-serif;">
+								<p style="font-size: 13px; color: #ffffff; font-family: 'Montserrat', sans-serif;">
 									<img src="<?= url(); ?>assets/img/youtube.png" style="width: 18px;"> <?= $key['youtube'] ?>
 								</p>
 							</a>
@@ -249,34 +253,36 @@ $key = mysqli_fetch_assoc(select__profilketuabph());
 							<br>	
 						</div>
 						<div class="col-md-7">
-							<p style="font-size: 17px; color: #ffffff; font-family: Arial, Helvetica, sans-serif;"><?= $key['namalengkap'] ?></p>
-							<p style="font-size: 15px; color: #dad6f3; font-family: Times New Roman, Times, serif;"><?= $key['nta'] ?></p>	
-							<p style="font-size: 14px; color: #dad6f3; font-family: Arial, Helvetica, sans-serif;"><?= $key['tingkatsku'] ?> | <?= $key['gugusdepan'] ?> | <?= $key['kwartirranting'] ?></p>	
+							<b>
+								<p style="font-size: 19px; color: #ffffff; font-family: 'Montserrat', sans-serif;"><?= $key['namalengkap'] ?></p>
+								<p style="font-size: 17px; color: #dad6f3; font-family: 'Montserrat', sans-serif;"><?= $key['nta'] ?></p>	
+								<p style="font-size: 17px; color: #dad6f3; font-family: 'Montserrat', sans-serif;"><?= $key['tingkatsku'] ?> | <?= $key['gugusdepan'] ?> | <?= $key['kwartirranting'] ?></p>		
+							</b>
 
 							<br>
 							<br>
 							<br>
 
 							<a href="https://www.instagram.com/<?= $key['instagram'] ?>">
-								<p style="font-size: 13px; color: #ffffff; font-family: Arial, Helvetica, sans-serif;">
+								<p style="font-size: 13px; color: #ffffff; font-family: 'Montserrat', sans-serif;">
 									<img src="<?= url(); ?>assets/img/instagram.png" style="width: 18px;"> <?= $key['instagram'] ?>
 								</p>
 							</a>
 
 							<a href="https://www.facebook.com/<?= $key['twitter'] ?>">
-								<p style="font-size: 13px; color: #ffffff; font-family: Arial, Helvetica, sans-serif;">
+								<p style="font-size: 13px; color: #ffffff; font-family: 'Montserrat', sans-serif;">
 									<img src="<?= url(); ?>assets/img/facebook.png" style="width: 18px;"> <?= $key['twitter'] ?>
 								</p>
 							</a>
 
 							<a href="https://twitter.com/<?= $key['facebook'] ?>">
-								<p style="font-size: 13px; color: #ffffff; font-family: Arial, Helvetica, sans-serif; margin-left: -2px;">
+								<p style="font-size: 13px; color: #ffffff; font-family: 'Montserrat', sans-serif; margin-left: -2px;">
 									<img src="<?= url(); ?>assets/img/twitter.png" style="width: 20px;"> <?= $key['facebook'] ?>
 								</p>
 							</a>
 
 							<a href="https://www.instagram.com/<?= $key['youtube'] ?>">
-								<p style="font-size: 13px; color: #ffffff; font-family: Arial, Helvetica, sans-serif;">
+								<p style="font-size: 13px; color: #ffffff; font-family: 'Montserrat', sans-serif;">
 									<img src="<?= url(); ?>assets/img/youtube.png" style="width: 18px;"> <?= $key['youtube'] ?>
 								</p>
 							</a>
@@ -310,34 +316,36 @@ $key = mysqli_fetch_assoc(select__profilketuabph());
 							<br>	
 						</div>
 						<div class="col-md-7">
-							<p style="font-size: 17px; color: #ffffff; font-family: Arial, Helvetica, sans-serif;"><?= $key['namalengkap'] ?></p>
-							<p style="font-size: 15px; color: #dad6f3; font-family: Times New Roman, Times, serif;"><?= $key['nta'] ?></p>	
-							<p style="font-size: 14px; color: #dad6f3; font-family: Arial, Helvetica, sans-serif;"><?= $key['tingkatsku'] ?> | <?= $key['gugusdepan'] ?> | <?= $key['kwartirranting'] ?></p>	
+							<b>
+								<p style="font-size: 19px; color: #ffffff; font-family: 'Montserrat', sans-serif;"><?= $key['namalengkap'] ?></p>
+								<p style="font-size: 17px; color: #dad6f3; font-family: 'Montserrat', sans-serif;"><?= $key['nta'] ?></p>	
+								<p style="font-size: 17px; color: #dad6f3; font-family: 'Montserrat', sans-serif;"><?= $key['tingkatsku'] ?> | <?= $key['gugusdepan'] ?> | <?= $key['kwartirranting'] ?></p>		
+							</b>
 
 							<br>
 							<br>
 							<br>
 
 							<a href="https://www.instagram.com/<?= $key['instagram'] ?>">
-								<p style="font-size: 13px; color: #ffffff; font-family: Arial, Helvetica, sans-serif;">
+								<p style="font-size: 13px; color: #ffffff; font-family: 'Montserrat', sans-serif;">
 									<img src="<?= url(); ?>assets/img/instagram.png" style="width: 18px;"> <?= $key['instagram'] ?>
 								</p>
 							</a>
 
 							<a href="https://www.facebook.com/<?= $key['twitter'] ?>">
-								<p style="font-size: 13px; color: #ffffff; font-family: Arial, Helvetica, sans-serif;">
+								<p style="font-size: 13px; color: #ffffff; font-family: 'Montserrat', sans-serif;">
 									<img src="<?= url(); ?>assets/img/facebook.png" style="width: 18px;"> <?= $key['twitter'] ?>
 								</p>
 							</a>
 
 							<a href="https://twitter.com/<?= $key['facebook'] ?>">
-								<p style="font-size: 13px; color: #ffffff; font-family: Arial, Helvetica, sans-serif; margin-left: -2px;">
+								<p style="font-size: 13px; color: #ffffff; font-family: 'Montserrat', sans-serif; margin-left: -2px;">
 									<img src="<?= url(); ?>assets/img/twitter.png" style="width: 20px;"> <?= $key['facebook'] ?>
 								</p>
 							</a>
 
 							<a href="https://www.instagram.com/<?= $key['youtube'] ?>">
-								<p style="font-size: 13px; color: #ffffff; font-family: Arial, Helvetica, sans-serif;">
+								<p style="font-size: 13px; color: #ffffff; font-family: 'Montserrat', sans-serif;">
 									<img src="<?= url(); ?>assets/img/youtube.png" style="width: 18px;"> <?= $key['youtube'] ?>
 								</p>
 							</a>
@@ -371,34 +379,36 @@ $key = mysqli_fetch_assoc(select__profilketuabph());
 							<br>	
 						</div>
 						<div class="col-md-7">
-							<p style="font-size: 17px; color: #ffffff; font-family: Arial, Helvetica, sans-serif;"><?= $key['namalengkap'] ?></p>
-							<p style="font-size: 15px; color: #dad6f3; font-family: Times New Roman, Times, serif;"><?= $key['nta'] ?></p>	
-							<p style="font-size: 14px; color: #dad6f3; font-family: Arial, Helvetica, sans-serif;"><?= $key['tingkatsku'] ?> | <?= $key['gugusdepan'] ?> | <?= $key['kwartirranting'] ?></p>	
+							<b>
+								<p style="font-size: 19px; color: #ffffff; font-family: 'Montserrat', sans-serif;"><?= $key['namalengkap'] ?></p>
+								<p style="font-size: 17px; color: #dad6f3; font-family: 'Montserrat', sans-serif;"><?= $key['nta'] ?></p>	
+								<p style="font-size: 17px; color: #dad6f3; font-family: 'Montserrat', sans-serif;"><?= $key['tingkatsku'] ?> | <?= $key['gugusdepan'] ?> | <?= $key['kwartirranting'] ?></p>		
+							</b>
 
 							<br>
 							<br>
 							<br>
 
 							<a href="https://www.instagram.com/<?= $key['instagram'] ?>">
-								<p style="font-size: 13px; color: #ffffff; font-family: Arial, Helvetica, sans-serif;">
+								<p style="font-size: 13px; color: #ffffff; font-family: 'Montserrat', sans-serif;">
 									<img src="<?= url(); ?>assets/img/instagram.png" style="width: 18px;"> <?= $key['instagram'] ?>
 								</p>
 							</a>
 
 							<a href="https://www.facebook.com/<?= $key['twitter'] ?>">
-								<p style="font-size: 13px; color: #ffffff; font-family: Arial, Helvetica, sans-serif;">
+								<p style="font-size: 13px; color: #ffffff; font-family: 'Montserrat', sans-serif;">
 									<img src="<?= url(); ?>assets/img/facebook.png" style="width: 18px;"> <?= $key['twitter'] ?>
 								</p>
 							</a>
 
 							<a href="https://twitter.com/<?= $key['facebook'] ?>">
-								<p style="font-size: 13px; color: #ffffff; font-family: Arial, Helvetica, sans-serif; margin-left: -2px;">
+								<p style="font-size: 13px; color: #ffffff; font-family: 'Montserrat', sans-serif; margin-left: -2px;">
 									<img src="<?= url(); ?>assets/img/twitter.png" style="width: 20px;"> <?= $key['facebook'] ?>
 								</p>
 							</a>
 
 							<a href="https://www.instagram.com/<?= $key['youtube'] ?>">
-								<p style="font-size: 13px; color: #ffffff; font-family: Arial, Helvetica, sans-serif;">
+								<p style="font-size: 13px; color: #ffffff; font-family: 'Montserrat', sans-serif;">
 									<img src="<?= url(); ?>assets/img/youtube.png" style="width: 18px;"> <?= $key['youtube'] ?>
 								</p>
 							</a>

@@ -14,7 +14,7 @@ require '../adm/dkc/adm/f/fungsi/fungsi.php';
   <link rel='stylesheet' href='<?= url() ?>assets/css/bootstrap.min.css'>
   <link rel="stylesheet" type="text/css" href="<?= url() ?>assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   <script src="<?= url() ?>assets/js/jquery.min.js"></script>
   <script src="<?= url() ?>assets/js/popper.min.js"></script>
 
@@ -79,7 +79,7 @@ require '../adm/dkc/adm/f/fungsi/fungsi.php';
       <div class="card" style="padding: 20px; box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.45);">
         <div class="row">
           <div class="card-body">
-            <h1 class="card-title" style="font-size: 18px; text-align: center; font-family: 'Fredoka One';"><b>BERITA</b></h1>
+            <h1 class="card-title" style="font-size: 18px; text-align: center; font-family: 'Montserrat', sans-serif;"><b>BERITA</b></h1>
             <br>
             
           </div>
@@ -107,7 +107,7 @@ require '../adm/dkc/adm/f/fungsi/fungsi.php';
       <div class="card" style="padding: 20px; box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.45);">
         <div class="row">
           <div class="card-body">
-            <h1 class="card-title" style="font-size: 18px; text-align: center; font-family: 'Fredoka One';"><b>MARKETPLACE</b></h1>
+            <h1 class="card-title" style="font-size: 18px; text-align: center; font-family: 'Montserrat', sans-serif;"><b>MARKETPLACE</b></h1>
             <br>
 
           </div>
@@ -170,7 +170,7 @@ require '../adm/dkc/adm/f/fungsi/fungsi.php';
     <div class="col-md-3 col-xs-12 col-sm-12">
       <div class="card" style="padding: 20px; box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.45);">
         <div class="card-body">
-          <b><p class="card-title" style="font-size: 18px; text-align: center; font-family: 'Fredoka One';"><i class="fa fa-calendar"></i>
+          <b><p class="card-title" style="font-size: 18px; text-align: center; font-family: 'Montserrat', sans-serif;"><i class="fa fa-calendar"></i>
  AGENDA</p></b>
           <br>
         </div>

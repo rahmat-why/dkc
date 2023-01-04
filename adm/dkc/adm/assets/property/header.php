@@ -581,7 +581,7 @@ body {
           <li>
             <a href="<?= url() ?>adm/dkc/adm/aturan/" style="color: #ffff">
               <i class="fa fa-bookmark"></i>
-              <span>Aturan</span>
+              <span>Pedoman</span>
             </a>
           </li>
 
