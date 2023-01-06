@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect('localhost', 'root', '', 'dkc');
+require "koneksi.php";
 
 // data potensi
 
