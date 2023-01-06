@@ -1708,10 +1708,6 @@ function sunting__thn() {
 
 // url ----------------------------------------------------------------------------------------------------
 
-function url(){
-  return $url = 'http://localhost/dkkk/';
-}
-
 
 //compress
 

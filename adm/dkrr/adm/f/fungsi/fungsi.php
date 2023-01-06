@@ -680,10 +680,4 @@ function select__thn() {
   return mysqli_query($conn, "SELECT * FROM thn");
 }
 
-// url
-
-function url(){
-  return $url = 'http://localhost/dkkk/';
-}
-
 ?>
