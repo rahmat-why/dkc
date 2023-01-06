@@ -796,7 +796,3 @@ require '../../adm/dkc/adm/f/fungsi/fungsi.php';
 
 })(jQuery);
 </script>
-
-<script>
-  document.getElementById("url").innerHTML = "//localhost/dkk/"
-</script>

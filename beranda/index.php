@@ -1,6 +1,7 @@
 <?php
 
 require '../adm/dkc/adm/f/fungsi/fungsi.php';
+header('Access-Control-Allow-Origin: *');
 
 ?>
 
